@@ -1,0 +1,40 @@
+<document! html>
+    <html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="timeSwitches">
+                <div id="work">
+                    <h2><button id="workUp" class="fa fa-chevron-up"></button> <span id="workDisplay">25</span> <button id="workDown" class="fa fa-chevron-down"></button></h2>
+                    <h3>WORK</h3>
+                </div>
+                <div id="break">
+                    <h2><button id="breakUp" class="fa fa-chevron-up"></button> <span id="breakDisplay">5</span> <button id="breakDown" class="fa fa-chevron-down"></button></h2>
+                    <h3>BREAK</h3>
+                </div>
+            </div>
+
+            <div id="conditionDisplay">
+                <h1 id='topText'>Work now!</h1>
+                <p id='timeText'><span id="configureMinutes">25</span>:00</p>
+                <h1 id='bottomText' class="initialOpacity">Rest now!</h1>
+            </div>
+
+            <nav id="buttons">
+                <div id="line"></div>
+                <button id="start">PLAY</button>
+                <button id="pause">PAUSE</button>
+                <button id="stop">STOP</button>
+                <button id="refresh">RESET</button>
+                <div id="line"></div>
+            </nav>
+        </div>
+
+        <p id="footer">Pomodoro Clock made in JS | By Sourqe</p>
+        <script src="main.js" ></script>
+    </body>
+</html>

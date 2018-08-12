@@ -1,0 +1,144 @@
+body, html {
+    background-color: gray;
+    color: white;
+}
+
+.container {
+    min-width: 630px;
+    max-width: 630px;
+    min-height: 370px;
+    max-height: 370px;
+    position: relative;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+    border: 6px solid lightgray;
+    border-radius: 8px;
+    background: white;
+    color: darkgray;   
+}
+
+#conditionDisplay {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: -185px auto 0 auto;
+    text-align: center;
+    border: 15px solid lightgray;
+    background-color: rgb(231, 231, 231);
+    color: gray;
+}
+
+#timeSwitches {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    height: 95px;
+    background-color: lightgray;
+    color: gray;
+    font-weight: 100;
+    margin-top: 110px;    
+}
+
+#work {
+    float: left;
+    text-align: center;
+}
+
+#break {
+    float: right;
+    text-align: center;
+}
+
+#breakUp,
+#breakDown
+#workUp,
+#workDown, {
+  vertical-align: top;
+  margin-top: 26px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+#workDisplay,
+#breakDisplay {
+  display: inline-block;
+  font-size: 42px;
+  width: 55px;
+}
+
+#work, #break {
+    height: 95px;
+    display: inline-block;
+}
+
+#topText {
+    margin: 30 0 0 0;
+}
+
+#bottomText {
+    margin: 0 0 0 0;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: lightgray;
+    color: gray;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#conditionDisplay p {
+    font-size: 72px;
+    margin: 0;
+    line-height: 90px;
+}
+
+h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 10px;
+}
+
+h2 {
+    margin: 5 0 0 0;
+}
+
+h1 {
+    font-family: 'Exo 2';
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: lightgray;
+}
+
+#start, #pause, #stop, #refresh {
+    width: 75px;
+    height: 55px;
+    font-size: 18px;
+    font-family: 'Exo 2';
+    font-weight: 100;
+    color: gray;
+    background-color: rgba(199, 199, 199, 0.808);
+}
+
+.initialOpacity {
+    color: rgb(128,128,128, 0.3);
+}
+
+#line {
+    height: 3px;
+    text-align: left;
+    background-color: gray;
+}
