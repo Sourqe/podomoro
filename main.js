@@ -12,11 +12,13 @@ function prefixZero(time) {
 }
 
 function startTimer(workNow) {
-    if (workNow = true) {
+    if (workNow === true) {
         var startTime = parseInt($("#workDisplay").text()) * 60;
         $("#timeText").text($("#workDisplay").text() + ":00");
 
-    } else {
+    } 
+    
+    if (workNow === false) {
         var startTime = parseInt($("#breakDisplay").text()) * 60;
         $("#timeText").text($("#breakDisplay").text() + ":00");
     }
@@ -31,11 +33,13 @@ function startTimer(workNow) {
 
         if (startTime == 0) {
             clearInterval(time);
-            if (workNow = true) {
+
+            if (workNow === true) {
                 workNow = false;
             } else {
                 workNow = true;
             }
+
             startTimer(workNow);
         }
 
@@ -53,7 +57,7 @@ $(function() {
         if (currentTime < 50) {
             var workTime = currentTime + 1;
             $("#workDisplay").text(workTime);
-            if (workNow = true) {
+            if (workNow === true) {
                 $("#configureMinutes").text(workTime);
             }
         } else {
@@ -66,7 +70,7 @@ $(function() {
         if (currentTime < 50) {
             var workTime = currentTime - 1;
             $("#breakDisplay").text(workTime);
-            if (workNow = false) {
+            if (workNow === false) {
                 $("#configureMinutes").text(workTime);
             }
         } else {
@@ -79,7 +83,7 @@ $(function() {
         if (currentTime > 1) {
             var workTime = currentTime - 1;
             $("#workDisplay").text(workTime);
-            if (workNow = true) {
+            if (workNow === true) {
                 $("#configureMinutes").text(workTime);
             }
         } else {
@@ -92,7 +96,7 @@ $(function() {
         if (currentTime > 1) {
             var workTime = currentTime - 1;
             $("#breakDisplay").text(workTime);
-            if (workNow = false) {
+            if (workNow === false) {
                 $("#configureMinutes").text(workTime);
             }
         } else {
