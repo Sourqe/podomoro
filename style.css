@@ -124,7 +124,7 @@ nav {
     background-color: darkgray;
 }
 
-#start, #pause, #stop, #refresh {
+#start, #pause, #stop {
     width: 75px;
     height: 55px;
     font-size: 18px;
@@ -138,6 +138,10 @@ nav {
     color: rgb(128,128,128, 0.3);
 }
 
+.gray {
+    color: gray;
+}
+
 #line {
     height: 6px;
     text-align: left;
@@ -146,7 +150,10 @@ nav {
 
 #start:hover,
 #pause:hover,
-#stop:hover,
-#refresh:hover {
+#stop:hover {
     background-color:white;
+}
+
+.disabledButton {
+   background-color: rgba(211, 211, 211, 0.3) !important;
 }
