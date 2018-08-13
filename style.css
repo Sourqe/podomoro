@@ -94,6 +94,7 @@ button {
     color: gray;
     text-align: center;
     margin-bottom: 0px;
+    font-weight: 700;
 }
 
 #conditionDisplay p {
@@ -120,7 +121,7 @@ nav {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: lightgray;
+    background-color: darkgray;
 }
 
 #start, #pause, #stop, #refresh {
@@ -128,9 +129,9 @@ nav {
     height: 55px;
     font-size: 18px;
     font-family: 'Exo 2';
-    font-weight: 100;
+    font-weight: 700;
     color: gray;
-    background-color: rgba(199, 199, 199, 0.808);
+    background-color: lightgray;
 }
 
 .initialOpacity {
@@ -138,7 +139,14 @@ nav {
 }
 
 #line {
-    height: 3px;
+    height: 6px;
     text-align: left;
-    background-color: gray;
+    background-color: lightgray;
+}
+
+#start:hover,
+#pause:hover,
+#stop:hover,
+#refresh:hover {
+    background-color:white;
 }
